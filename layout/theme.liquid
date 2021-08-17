@@ -25,7 +25,13 @@
 
     {% render 'meta-tags' %}
 
-    <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'jquery-3.5.1.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'jquery-migrate-3.3.0.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'plugins.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'mains.min.js' | asset_url }}" defer="defer"></script>
+
+
     {{ content_for_header }}
 
     
