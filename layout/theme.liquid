@@ -28,11 +28,11 @@
     {{ content_for_header }}
 
     
-    {% endstyle %}
-
+    
     {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'plugins.min.css' | asset_url | stylesheet_tag }}
     {{ 'vendor.min.css' | asset_url | stylesheet_tag }}
+    {% endstyle %}
 
 
     {%- unless settings.type_body_font.system? -%}
@@ -46,9 +46,7 @@
   </head>
 
   <body>
-    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ "accessibility.skip_to_text" | t }}
-    </a>
+
 
     {% section 'header' %}
 
@@ -57,9 +55,7 @@
     </main>
 
 
-    <ul hidden>
-      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
-    </ul>
+
 
     <script>
       window.routes = {
